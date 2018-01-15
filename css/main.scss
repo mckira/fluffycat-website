@@ -1,0 +1,936 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+#header {
+  .navbar {
+    background-color: rgba(44, 13, 84, 0.7) !important;
+    max-width: 100%;
+  }
+
+  .btn-secondary {
+    line-height: 0.8;
+
+    @media(max-width: 992px){
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 0px;
+  }
+
+  .navbar-toggler {
+    border: none !important;
+  }
+}
+
+
+* {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a {
+  color: #44d4bf;
+}
+
+a:hover {
+  color: #44d4bf;
+}
+
+h1, h2, h3, h4, h5, h6, .logo-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #2c0d53;
+}
+
+main {
+  /*
+  background-color: white;
+  opacity: 0.7;
+  filter: alpha(opacity=60);
+  */
+}
+
+body {
+  /*
+  background-image: url(../images/text-test.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  */
+
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.features {
+  display: flex;
+  list-style: none;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: block;
+    text-align: justify;
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  p {
+      color: white;
+  }
+
+  a {
+    align-self: center;
+  }
+}
+
+#communities {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  @media (max-width: 920px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+}
+
+#core-values {
+  padding-top: 4rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 2rem;
+
+  .value-icon {
+    max-width: 5vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: white;
+  }
+
+  p {
+    align-self: baseline;
+  }
+
+  @media (max-width: 920px) {
+    li {
+      max-width: 60vw;
+    }
+
+    .value-icon {
+      max-width: 10vw;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .value-icon {
+      max-width: 20vw;
+      height: auto;
+    }
+  }
+}
+
+
+#developers-corner {
+  overflow: hidden;
+
+  .contract-icon {
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     width: auto;
+     height: 20vh;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+   }
+}
+
+#footer {
+  background-color: black;
+
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  .fa {
+    font-size: 2rem;
+    color: white;
+  }
+
+  a {
+      color: #472F6D;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  span {
+    color: white;
+  }
+}
+
+#friends {
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+}
+
+#github {
+  strong {
+    color: #2c0d54;
+  }
+}
+
+#hero {
+  h2 {
+    margin-top: 1rem;
+  }
+
+  ul {
+    margin-top: 10vh;
+    margin-bottom: 2rem;
+
+    li {
+      padding: 0px;
+    }
+
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .slack-icon {
+    font-size: 18px;
+  }
+
+  .logo {
+
+    min-height: 20vh;
+    min-width: 20vw;
+  }
+
+  .typelogo {
+    min-width: 25vw;
+    max-width: 25vw;
+  }
+  .ethereum {
+    margin-top: 1rem;
+    max-width: 10vw;
+    height: auto;
+  }
+
+
+  @media (max-width: 920px) {
+    .ethereum {
+      max-width: 20vw;
+      height: auto;
+    }
+
+    .logo {
+      max-height: 20vh;
+      width: auto;
+    }
+
+    .typelogo {
+      max-height: 25vh;
+      min-width: 50vw;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .ethereum {
+      max-width: 30vw;
+    }
+
+    .typelogo {
+      max-width: 50vw;
+      height: auto;
+    }
+  }
+}
+
+#open-source-giving {
+    .text-block {
+      max-width: 50vw;
+    }
+
+    @media (max-width: 650px) {
+      .text-block {
+        max-width: 100%;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+}
+
+#transaction-flow {
+  padding-top: 4rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: left;
+}
+
+#smart-contracts {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  background-image: url(../assets/projects-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  color: white;
+
+   h4 {
+     padding: 0.5rem;
+     color: white;
+   }
+
+   .contracts h4 {
+     color: white;
+   }
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+   p {
+     text-align: left;
+   }
+
+   li {
+     align-items: center;
+     display: block;
+     text-align: left;
+     list-style: none;
+     padding: 2rem;
+
+     .project-icon {
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       width: auto;
+       height: 20vh;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+      }
+
+     .contract-icon {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: auto;
+        height: 20vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+    }
+
+    @media (max-width: 920px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      li {
+        padding: 2rem;
+      }
+
+      .project-icon {
+        width: 20vw;
+      }
+    }
+
+  .projects li {
+  /*  border: 5px solid #2c0d53; */
+  }
+
+  .contracts li {
+  /*  border: 5px solid #2A6813; */
+    min-width: 35%;
+    }
+
+  .contracts h2 h4 {
+          color: #0e2958;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    li {
+          padding: 0.5rem;
+        }
+
+    .contracts li {
+      min-width: 100%;
+    }
+
+  }
+ }
+
+/*
+.background {
+  background-image: url("/images/banner.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+*/
+
+.background-black {
+  background-color: black;
+}
+
+.background-green {
+  background-color: #2A6813;
+}
+
+.background-white {
+  background-color: white;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.background-white-transparent {
+  background-color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.background-light-grey {
+  background-color: #d2d2d2;
+}
+
+.background-dark-grey {
+  background-color: #787878;
+}
+
+.background-purple {
+  background-color: #2c0d53;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.btn-secondary:hover, .btn-secondary.active {
+    background-color: #472F6D;
+    box-shadow: none;
+}
+
+.btn-warning {
+    text-align: center;
+    background-color: #fff255;
+    border-color:  #fff255;
+}
+
+.btn-info {
+    text-align: center;
+    background-color: #777777;
+    border-color:  #777777;
+}
+
+.widelarge {
+  display: flow-root;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-blue {
+  color: #0e2958;
+}
+
+.color-blue-steel {
+  color: #155388;
+}
+
+.color-green {
+  color: #2A6813;
+}
+
+.color-purple {
+  color: #2c0d53;
+}
+
+.color-teal {
+  color: #6b98a7;
+}
+
+.color-yellow {
+  color: #dbb527;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-light-grey {
+  color: #d2d2d2;
+}
+
+.color-dark-grey {
+  color: #787878;
+}
+
+.container-fluid {
+  justify-content: center;
+  padding: 0px;
+  display: block;
+}
+
+.content-block {
+  text-align: center;
+  max-width: 20vw;
+}
+
+.copyright {
+  color: white;
+}
+
+.cover-section {
+  min-height: 100vh;
+  max-width: 100%;
+  text-align: center;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  justify-content: center;
+
+
+  .gradient {
+    /*
+    background-image: url(../images/heromask.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+    */
+
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b75a7+0,009b77+100 */
+background: rgba(44, 13, 84, 0.7); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(107, 117, 167, 0.7) 0%, rgba(44, 13, 84, 0.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(107, 117, 167, 0.7) 0%,rgba(44, 13, 84, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(107, 117, 167, 0.7) 0%,rgba(44, 13, 84, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117, 167, 0.7)', endColorstr='rgba(44, 13, 84, 0.7)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+ }
+}
+
+@media (max-width: 920px) {
+  .features li {
+    min-width: 50%;
+    padding: 0.1rem;
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .features li {
+    min-width: 90%;
+  }
+}
+
+.friendsrow {
+  padding-top: 2rem;
+  padding-left: 20vw;
+  padding-right: 20vw;
+
+  @media (max-width: 920px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.friends {
+  height: 5vw;
+  width: auto;
+  padding: 0.5rem;
+  display: flex;
+
+  @media (max-width: 920px) {
+  height: 10vw;
+  width: auto;
+  }
+
+  @media (max-width: 650px) {
+  height: 15vw;
+  width: auto;
+  }
+}
+
+.features {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: block;
+    flex: 1 20%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 920px) {
+  .features li {
+    min-width: 50%;
+    padding: 0.1rem;
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .features li {
+    min-width: 90%;
+  }
+}
+
+.github-icon {
+  width: 10vw;
+  height: auto;
+
+  @media (max-width: 920px) {
+    min-width: 20%;
+    }
+
+  @media (max-width: 650px) {
+    min-width: 40%;
+    }
+}
+
+.headline {
+  font-size: 8rem;
+}
+
+.hide-list-style {
+  list-style: none;
+}
+
+.hero-image {
+  max-height: 30vh;
+  padding: 20px;
+}
+
+@media (max-width: 650px) {
+  .hero-image {
+  max-height: 20vh;
+  }
+}
+
+.hero-image-container {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  /*
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  */
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.margin-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-block {
+  text-align: left;
+  max-width: 30vw;
+}
+
+.text-block-large {
+  text-align: justify;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+@media (max-width: 920px) {
+  .text-block {
+    min-width: 50vw;
+    max-width: 90vw;
+  }
+
+  .text-block-large {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+.text-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.tagline {
+  font-size: 3rem;
+}
+
+@media (max-width: 920px) {
+  .tagline {
+    font-size: 2rem;
+  }
+}
+
+.opaque {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.transparent {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.user-roles {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.unicorn-dac-row {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  @media (max-width: 920px) {
+  padding: auto;
+  }
+}
+
+.unicorn-dac-column {
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (max-width: 920px) {
+
+  }
+
+/*
+  background-image: url(../assets/unitest.png);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: relative;
+  background-position: center;
+*/
+}
+
+.unicorn-logo {
+  max-width: 30vw;
+  height: auto;
+
+  @media (max-width: 920px) {
+  max-width: 40vw;
+  }
+
+  @media (max-width: 650px) {
+  max-width: 50vw;
+  }
+}
+
+
+.community-row {
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  @media (max-width: 920px) {
+  padding: auto;
+  }
+}
+
+
+.community-column {
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (max-width: 920px) {
+  min-height: auto;
+  }
+
+/*
+  background-image: url(../assets/unitest.png);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: relative;
+  background-position: center;
+*/
+}
+
+.graphic {
+  min-width: 20vw;
+  max-width: 20vw;
+  height: auto;
+}
+
+.graphic-portrait {
+  min-width: 20vw;
+  max-width: 20vw;
+  height: auto;
+
+    @media (max-width: 650) {
+      min-width: 50vw;
+      max-width: 50vw;
+      height: auto;
+    }
+}
+
+.screenshot {
+  min-width: 50vw;
+  max-width: 50vw;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  height: auto;
+  box-shadow: 0px 0px 20px 5px #e4e4e4;
+
+  @media (max-width: 920px) {
+    max-width: 80vw;
+  }
+}
+
+.screenshot-portrait {
+  min-width: 20vw;
+  max-width: 20vw;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  height: auto;
+
+  box-shadow: 0px 0px 20px 5px #e4e4e4;
+
+  @media (max-width: 650px) {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: auto;
+  }
+}
+
+.lp-diagram {
+  width: 960px;
+  height: 540px;
+  position: absolute;
+}
+
+.scroll-horizontal {
+  margin: 0 auto;
+  width: 100vw;
+  height: 540px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+}
+
+// Accessibility section
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #BF1722;
+  color: white;
+  padding: 8px;
+  z-index:100;
+}
+
+.skip-link:focus {
+  top: 80px;
+}
+
+// This creates a visible red line around all elements - great helper code for visual debugging
+
+/*
+* {
+   outline: 1px solid red !important;
+}
+*/

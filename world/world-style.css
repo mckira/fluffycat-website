@@ -1,0 +1,40 @@
+#world {
+  margin-top: 100px;
+}
+
+#world-svg-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#world svg {
+  margin-left: -280px;
+}
+
+.country {
+    fill: #b8b8b8;
+    stroke: #fff;
+    stroke-width: .5px;
+    stroke-linejoin: round;
+}
+
+.graticule {
+    fill: none;
+    stroke: #836c9e;
+    stroke-opacity: .3;
+    stroke-width: 0;
+}
+
+.graticule-outline {
+    fill: none;
+    stroke: #604a7d;
+    stroke-width: 1.5px;
+}
+
+text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-weight: bold;
+    text-anchor: middle;
+}

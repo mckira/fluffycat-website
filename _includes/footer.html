@@ -1,0 +1,49 @@
+<footer id="footer" class="container-fluid background-black">
+  <ul class="col d-flex justify-content-center hide-list-style flex-wrap">
+
+    {% if site.medium %}
+      <li>
+        <a href="{{ site.medium }}"><i class="fab fa-medium fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.join %}
+      <li>
+        <a href="{{ site.join }}"><i class="far fa-comments fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.github_username %}
+      <li>
+          <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.reddit %}
+      <li>
+          <a href="https://reddit.com/r/{{ site.reddit }}"><i class="fab fa-reddit fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+      <li>
+          <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fab fa-facebook fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+    {% if site.youtube %}
+      <li>
+          <a href="{{ site.youtube }}"><i class="fab fa-youtube fa-2x"></i></a>
+      </li>
+    {% endif %}
+
+  </ul>
+  <span>Support us with your Donation: <a class="donation-link" href="https://fluffycat.tech/donate/">0xb39274C9887d314Ba65dA9929f3d0E94893570A7</a></span>
+  <h6 class="color-white padding-top">MMXVII - No Rights Reserved - <a href="/world/">The FluffyCat DAC</a></h6>
+</footer>

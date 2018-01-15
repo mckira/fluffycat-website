@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<!-- Custom landing page design-->
+<html>
+
+  {% include head-world.html %}
+
+  <body class="landing">
+
+    <div id="page-wrapper">
+
+      {% include header-minisites.html %}
+
+      {{ content }}
+
+    </div>
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

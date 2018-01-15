@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: FluffyCat
+description: Using blockchain technology to help our fluffy friends
+owner: FluffyCat # or company name
+first_published: 2018 # if migrating another site, the year of your first publish
+email: meow@fluffycat.tech
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fluffycat.tech" # the base hostname & protocol for your site
+theme: minima
+medium: https://medium.com/@t04glovern/
+join: https://fluffycat.tech/join/
+slack: http://slack.fluffycat.tech/
+twitter_username: nathangloverAUS
+github_username: fluffycatware
+reddit: t04glovern
+facebook_username: glovers.id.au
+youtube: https://www.youtube.com/
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+sass:
+    sass_dir: _sass
+#  style: compressed
+permalink: /:categories/:title
+
+collections:
+  blog:
+    output: true
+
+plugins:
+  - jekyll-sitemap
