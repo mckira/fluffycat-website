@@ -37,7 +37,7 @@ var title = svg.append('text')
 d3.json('https://gist.githubusercontent.com/creativepsyco/4187660/raw/6b678e72402d45811e10ebb4e238542ef4f4de51/readme-world-110m.json', function (error, world) {
 
   var countries = topojson.object(world, world.objects.countries).geometries,
-    selectCountries = ['Australia'],
+    selectCountries = ['Australia', 'Switzerland'],
     i = -1
 
   countries.sort(function (a, b) {
