@@ -11,7 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fluffycat.tech" # the base hostname & protocol for your site
 theme: minima
 medium: https://medium.com/@t04glovern/
-join: https://fluffycat.tech/join/
+join: http://fluffycat.tech/join/
 slack: http://slack.fluffycat.tech/
 twitter_username: nathangloverAUS
 github_username: fluffycatware

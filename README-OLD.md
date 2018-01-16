@@ -65,4 +65,4 @@ The master branch is locked for direct pushes and needs a reviewed pull request.
 
 Please develop new content and features on the *development* branch. The changes are being built on push by Netlify and is reachable via:
 
-[https://staging.fluffycat.tech/](https://staging.fluffycat.tech/)
+[http://staging.fluffycat.tech/](http://staging.fluffycat.tech/)
