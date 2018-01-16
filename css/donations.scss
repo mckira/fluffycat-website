@@ -1,7 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
 * {
   margin: 0px;
   padding: 0px;
@@ -20,11 +19,10 @@ a {
   background-position: center;
   margin: none;
 
-
-
   h1 {
     padding-top: 15vh;
     padding-bottom: 10vh;
+    color: #ffffff;
   }
 
   p {
@@ -40,12 +38,12 @@ a {
   }
 
   .btn-secondary:hover, .btn-secondary.active {
-      background-color: white;
-      color: #2890BE;
-      box-shadow: none;
+    background-color: white;
+    color: #2890BE;
+    box-shadow: none;
   }
 
-  @media(max-width: 650px){
+  @media(max-width: 650px) {
     height: 100vh;
   }
 }
@@ -60,7 +58,7 @@ a {
     min-width: 30vw;
   }
 
-  @media(max-width: 920px){
+  @media(max-width: 920px) {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
 
@@ -98,17 +96,17 @@ a {
   }
 
   .btn-secondary {
-      color: #2890BE;
+    color: #2890BE;
   }
   .btn-secondary:hover, .btn-secondary.active {
-      background-color: #fff255;
-      color: #2890BE;
-      box-shadow: none;
+    background-color: #fff255;
+    color: #2890BE;
+    box-shadow: none;
   }
 
-  @media(max-width: 920px){
+  @media(max-width: 920px) {
 
-    li  {
+    li {
       min-width: 80vw;
     }
   }
@@ -128,12 +126,12 @@ a {
   font-weight: 500;
   color: #fff255;
 
-  @media(max-width: 650px){
+  @media(max-width: 650px) {
     text-overflow: ellipsis;
     max-width: 80vw;
   }
 }
 
 #faq {
-   padding-top: 10vh;
+  padding-top: 10vh;
 }

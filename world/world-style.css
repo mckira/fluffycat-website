@@ -3,8 +3,8 @@
 }
 
 #world-svg-container {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 #world svg {
@@ -12,29 +12,29 @@
 }
 
 .country {
-    fill: #b8b8b8;
-    stroke: #fff;
-    stroke-width: .5px;
-    stroke-linejoin: round;
+  fill: #b8b8b8;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linejoin: round;
 }
 
 .graticule {
-    fill: none;
-    stroke: #75c8c8;
-    stroke-opacity: .3;
-    stroke-width: 0;
+  fill: none;
+  stroke: #75c8c8;
+  stroke-opacity: .3;
+  stroke-width: 0;
 }
 
 .graticule-outline {
-    fill: none;
-    stroke: #2690be;
-    stroke-width: 1.5px;
+  fill: none;
+  stroke: #2690be;
+  stroke-width: 1.5px;
 }
 
 text {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    font-weight: bold;
-    text-anchor: middle;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-weight: bold;
+  text-anchor: middle;
 }

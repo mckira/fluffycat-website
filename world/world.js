@@ -1,97 +1,97 @@
-    var width = 960;
-        height = 500;
+var width = 960
+height = 500
 
-    var centroid = d3.geo.path()
-        .projection(function(d) { return d; })
-        .centroid;
+var centroid = d3.geo.path()
+  .projection(function (d) { return d })
+  .centroid
 
-    var projection = d3.geo.orthographic()
-        .scale (200)
-        .clipAngle(90);
+var projection = d3.geo.orthographic()
+  .scale(200)
+  .clipAngle(90)
 
-    var path = d3.geo.path()
-        .projection(projection);
+var path = d3.geo.path()
+  .projection(projection)
 
-    var graticule = d3.geo.graticule()
-        .extent([[-180, -90], [180 - 0.1, 90 - 0.1]]);
+var graticule = d3.geo.graticule()
+  .extent([[-180, -90], [180 - 0.1, 90 - 0.1]])
 
-    var svg = d3.select("#world-svg-container").append("svg")
-        .attr("width", width)
-        .attr("height", height);
+var svg = d3.select('#world-svg-container').append('svg')
+  .attr('width', width)
+  .attr('height', height)
 
-    var line = svg.append("path")
-        .datum(graticule)
-        .attr("class", "graticule")
-        .attr("d", path);
+var line = svg.append('path')
+  .datum(graticule)
+  .attr('class', 'graticule')
+  .attr('d', path)
 
-    svg.append("circle")
-        .attr("class", "graticule-outline")
-        .attr("cx", width / 2)
-        .attr("cy", height / 2)
-        .attr("r", projection.scale());
+svg.append('circle')
+  .attr('class', 'graticule-outline')
+  .attr('cx', width / 2)
+  .attr('cy', height / 2)
+  .attr('r', projection.scale())
 
-    var title = svg.append("text")
-        .attr("x", width / 2)
-        .attr("y", height * 3 / 5);
+var title = svg.append('text')
+  .attr('x', width / 2)
+  .attr('y', height * 3 / 5)
 
-    d3.json("https://gist.githubusercontent.com/creativepsyco/4187660/raw/6b678e72402d45811e10ebb4e238542ef4f4de51/readme-world-110m.json", function(error, world) {
+d3.json('https://gist.githubusercontent.com/creativepsyco/4187660/raw/6b678e72402d45811e10ebb4e238542ef4f4de51/readme-world-110m.json', function (error, world) {
 
-        var countries = topojson.object(world, world.objects.countries).geometries,
-            selectCountries = ["Australia"],
-            i = -1;
+  var countries = topojson.object(world, world.objects.countries).geometries,
+    selectCountries = ['Australia'],
+    i = -1
 
-        countries.sort(function(a, b){
-            var keyA = a.id,
-                keyB = b.id;
-            // Compare the 2 dates
-            if(keyA < keyB) return -1;
-            if(keyA > keyB) return 1;
-            return 0;
-        });
+  countries.sort(function (a, b) {
+    var keyA = a.id,
+      keyB = b.id
+    // Compare the 2 dates
+    if (keyA < keyB) return -1
+    if (keyA > keyB) return 1
+    return 0
+  })
 
-        var country = svg.selectAll(".country")
-            .data(countries)
-            .enter().insert("path", ".graticule")
-            .attr("class", "country")
-            .attr("d", path);
+  var country = svg.selectAll('.country')
+    .data(countries)
+    .enter().insert('path', '.graticule')
+    .attr('class', 'country')
+    .attr('d', path)
 
-        countries = countries.filter(function (c) {
-            return selectCountries.indexOf(c.id) >= 0;
-        });
+  countries = countries.filter(function (c) {
+    return selectCountries.indexOf(c.id) >= 0
+  })
 
-        step();
+  step()
 
-        function step() {
+  function step () {
 
-            if (++i >= countries.length) i = 0;
+    if (++i >= countries.length) i = 0
 
-            title.text(countries[i].id);
+    title.text(countries[i].id)
 
-            country.transition()
-                .style("fill", function(d, k) {
-                    return selectCountries.indexOf(country[0][k].__data__.id) === i ? "#7dc858" : "#b8b8b8";
-                });
+    country.transition()
+      .style('fill', function (d, k) {
+        return selectCountries.indexOf(country[0][k].__data__.id) === i ? '#7dc858' : '#b8b8b8'
+      })
 
-            d3.transition()
-                .duration(1250)
-                .tween("rotate", function() {
-                    var point = centroid(countries[i]),
-                        rotate = d3.interpolate(projection.rotate(), [-point[0], -point[1]]);
-                    return function(t) {
-                        projection.rotate(rotate(t));
-                        country.attr("d", path);
-                        line.attr("d", path);
-                    };
-                })
-                .transition()
-                .each("end", step);
+    d3.transition()
+      .duration(1250)
+      .tween('rotate', function () {
+        var point = centroid(countries[i]),
+          rotate = d3.interpolate(projection.rotate(), [-point[0], -point[1]])
+        return function (t) {
+          projection.rotate(rotate(t))
+          country.attr('d', path)
+          line.attr('d', path)
         }
-    });
+      })
+      .transition()
+      .each('end', step)
+  }
+})
 
-    // Making the globe responsive, it's not that straightoward, "hacky" approach with magic numbers and CSS string concatenation
-    $(window).resize(function() {
-        var containerWidth = $("#world-svg-container").width();
-        var scale = containerWidth / 480;
-        $("#world-svg-container").css({ "transform" : "scale(" + scale + ")" });
-    }).trigger("resize"); // kicking off the resize handler on the initial load
+// Making the globe responsive, it's not that straightoward, "hacky" approach with magic numbers and CSS string concatenation
+$(window).resize(function () {
+  var containerWidth = $('#world-svg-container').width()
+  var scale = containerWidth / 480
+  $('#world-svg-container').css({'transform': 'scale(' + scale + ')'})
+}).trigger('resize') // kicking off the resize handler on the initial load
 

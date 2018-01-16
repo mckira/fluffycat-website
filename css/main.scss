@@ -1,8 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-
 #header {
   .navbar {
     background-color: rgba(125, 200, 88, 0.8) !important;
@@ -12,7 +9,7 @@
   .btn-secondary {
     line-height: 0.8;
 
-    @media(max-width: 992px){
+    @media(max-width: 992px) {
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
@@ -21,14 +18,13 @@
   .nav-link {
     padding-top: 1rem;
     padding-bottom: 0px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
   }
 
   .navbar-toggler {
     border: none !important;
   }
 }
-
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -72,7 +68,6 @@ body {
   padding: 0px;
 }
 
-
 .features {
   display: flex;
   list-style: none;
@@ -91,7 +86,7 @@ body {
 
 .card {
   p {
-      color: white;
+    color: white;
   }
 
   a {
@@ -158,19 +153,18 @@ body {
   }
 }
 
-
 #developers-corner {
   overflow: hidden;
 
   .contract-icon {
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
-     width: auto;
-     height: 20vh;
-     padding-top: 1rem;
-     padding-bottom: 1rem;
-   }
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: 20vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 #footer {
@@ -186,7 +180,7 @@ body {
   }
 
   a {
-      color: #2890be;
+    color: #2890be;
   }
 
   li {
@@ -251,7 +245,6 @@ body {
     height: auto;
   }
 
-
   @media (max-width: 920px) {
     .ethereum {
       max-width: 20vw;
@@ -282,19 +275,19 @@ body {
 }
 
 #open-source-giving {
+  .text-block {
+    max-width: 50vw;
+  }
+
+  @media (max-width: 650px) {
     .text-block {
-      max-width: 50vw;
+      max-width: 100%;
     }
 
-    @media (max-width: 650px) {
-      .text-block {
-        max-width: 100%;
-      }
-
-      img {
-        display: none;
-      }
+    img {
+      display: none;
     }
+  }
 
 }
 
@@ -317,77 +310,77 @@ body {
 
   color: white;
 
-   h4 {
-     padding: 0.5rem;
-     color: white;
-   }
+  h4 {
+    padding: 0.5rem;
+    color: white;
+  }
 
-   .contracts h4 {
-     color: white;
-   }
+  .contracts h4 {
+    color: white;
+  }
 
   ul {
     padding: 0px;
     margin: 0px;
   }
 
-   p {
-     text-align: left;
-   }
+  p {
+    text-align: left;
+  }
 
-   li {
-     align-items: center;
-     display: block;
-     text-align: left;
-     list-style: none;
-     padding: 2rem;
+  li {
+    align-items: center;
+    display: block;
+    text-align: left;
+    list-style: none;
+    padding: 2rem;
 
-     .project-icon {
-       margin-left: auto;
-       margin-right: auto;
-       display: block;
-       width: auto;
-       height: 20vh;
-       padding-top: 1rem;
-       padding-bottom: 1rem;
-      }
-
-     .contract-icon {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: auto;
-        height: 20vh;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-
+    .project-icon {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: auto;
+      height: 20vh;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
 
-    @media (max-width: 920px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
-
-      li {
-        padding: 2rem;
-      }
-
-      .project-icon {
-        width: 20vw;
-      }
+    .contract-icon {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: auto;
+      height: 20vh;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
+
+  }
+
+  @media (max-width: 920px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    li {
+      padding: 2rem;
+    }
+
+    .project-icon {
+      width: 20vw;
+    }
+  }
 
   .projects li {
-  /*  border: 5px solid #51C8C8; */
+    /*  border: 5px solid #51C8C8; */
   }
 
   .contracts li {
-  /*  border: 5px solid #2A6813; */
+    /*  border: 5px solid #2A6813; */
     min-width: 35%;
-    }
+  }
 
   .contracts h2 h4 {
-          color: #0e2958;
+    color: #0e2958;
   }
 
   @media (max-width: 650px) {
@@ -395,15 +388,15 @@ body {
     padding-right: 0px;
 
     li {
-          padding: 0.5rem;
-        }
+      padding: 0.5rem;
+    }
 
     .contracts li {
       min-width: 100%;
     }
 
   }
- }
+}
 
 /*
 .background {
@@ -452,20 +445,20 @@ body {
 }
 
 .btn-secondary:hover, .btn-secondary.active {
-    background-color: #2890BE;
-    box-shadow: none;
+  background-color: #2890BE;
+  box-shadow: none;
 }
 
 .btn-warning {
-    text-align: center;
-    background-color: #fff255;
-    border-color:  #fff255;
+  text-align: center;
+  background-color: #fff255;
+  border-color: #fff255;
 }
 
 .btn-info {
-    text-align: center;
-    background-color: #777777;
-    border-color:  #777777;
+  text-align: center;
+  background-color: #777777;
+  border-color: #777777;
 }
 
 .widelarge {
@@ -541,7 +534,6 @@ body {
   background-position: center;
   justify-content: center;
 
-
   .gradient {
     /*
     background-image: url(../images/heromask.svg);
@@ -557,16 +549,14 @@ body {
     padding: 0px;
     position: absolute;
 
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b75a7+0,009b77+100 */
-background: rgba(81, 200, 200, 0.7); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117, 167, 0.7)', endColorstr='rgba(44, 13, 84, 0.7)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgba(81, 200, 200, 0.7); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(107, 117, 167, 0.7)', endColorstr='rgba(44, 13, 84, 0.7)', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
-
- }
+  }
 }
 
 @media (max-width: 920px) {
@@ -606,13 +596,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   display: flex;
 
   @media (max-width: 920px) {
-  height: 10vw;
-  width: auto;
+    height: 10vw;
+    width: auto;
   }
 
   @media (max-width: 650px) {
-  height: 15vw;
-  width: auto;
+    height: 15vw;
+    width: auto;
   }
 }
 
@@ -652,11 +642,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
 
   @media (max-width: 920px) {
     min-width: 20%;
-    }
+  }
 
   @media (max-width: 650px) {
     min-width: 40%;
-    }
+  }
 }
 
 .headline {
@@ -674,7 +664,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
 
 @media (max-width: 650px) {
   .hero-image {
-  max-height: 20vh;
+    max-height: 20vh;
   }
 }
 
@@ -768,7 +758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   padding-right: 10vw;
 
   @media (max-width: 920px) {
-  padding: auto;
+    padding: auto;
   }
 }
 
@@ -783,15 +773,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
 
   }
 
-/*
-  background-image: url(../assets/unitest.png);
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: relative;
-  background-position: center;
-*/
+  /*
+    background-image: url(../assets/unitest.png);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: relative;
+    background-position: center;
+  */
 }
 
 .kitten-logo {
@@ -799,24 +789,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   height: auto;
 
   @media (max-width: 920px) {
-  max-width: 40vw;
+    max-width: 40vw;
   }
 
   @media (max-width: 650px) {
-  max-width: 50vw;
+    max-width: 50vw;
   }
 }
-
 
 .community-row {
   padding-left: 10vw;
   padding-right: 10vw;
 
   @media (max-width: 920px) {
-  padding: auto;
+    padding: auto;
   }
 }
-
 
 .community-column {
   align-items: center;
@@ -826,18 +814,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   padding-right: 1rem;
 
   @media (max-width: 920px) {
-  min-height: auto;
+    min-height: auto;
   }
 
-/*
-  background-image: url(../assets/unitest.png);
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: relative;
-  background-position: center;
-*/
+  /*
+    background-image: url(../assets/unitest.png);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: relative;
+    background-position: center;
+  */
 }
 
 .graphic {
@@ -851,11 +839,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   max-width: 20vw;
   height: auto;
 
-    @media (max-width: 650) {
-      min-width: 50vw;
-      max-width: 50vw;
-      height: auto;
-    }
+  @media (max-width: 650) {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: auto;
+  }
 }
 
 .screenshot {
@@ -921,7 +909,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   background: #BF1722;
   color: white;
   padding: 8px;
-  z-index:100;
+  z-index: 100;
 }
 
 .skip-link:focus {
