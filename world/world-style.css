@@ -20,14 +20,14 @@
 
 .graticule {
     fill: none;
-    stroke: #836c9e;
+    stroke: #75c8c8;
     stroke-opacity: .3;
     stroke-width: 0;
 }
 
 .graticule-outline {
     fill: none;
-    stroke: #604a7d;
+    stroke: #2690be;
     stroke-width: 1.5px;
 }
 

@@ -5,7 +5,7 @@
 
 #header {
   .navbar {
-    background-color: rgba(44, 13, 84, 0.7) !important;
+    background-color: rgba(125, 200, 88, 0.8) !important;
     max-width: 100%;
   }
 
@@ -21,6 +21,7 @@
   .nav-link {
     padding-top: 1rem;
     padding-bottom: 0px;
+    color: rgba(255,255,255,1);
   }
 
   .navbar-toggler {
@@ -36,18 +37,18 @@
 }
 
 a {
-  color: #44d4bf;
+  color: #7dc858;
 }
 
 a:hover {
-  color: #44d4bf;
+  color: #7dc858;
 }
 
 h1, h2, h3, h4, h5, h6, .logo-font {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #2c0d53;
+  color: #2890be;
 }
 
 main {
@@ -185,7 +186,7 @@ body {
   }
 
   a {
-      color: #472F6D;
+      color: #2890be;
   }
 
   li {
@@ -207,7 +208,7 @@ body {
 
 #github {
   strong {
-    color: #2c0d54;
+    color: #2890be;
   }
 }
 
@@ -377,7 +378,7 @@ body {
     }
 
   .projects li {
-  /*  border: 5px solid #2c0d53; */
+  /*  border: 5px solid #51C8C8; */
   }
 
   .contracts li {
@@ -441,7 +442,7 @@ body {
 }
 
 .background-purple {
-  background-color: #2c0d53;
+  background-color: #51C8C8;
 }
 
 .btn-secondary {
@@ -451,7 +452,7 @@ body {
 }
 
 .btn-secondary:hover, .btn-secondary.active {
-    background-color: #472F6D;
+    background-color: #2890BE;
     box-shadow: none;
 }
 
@@ -491,7 +492,7 @@ body {
 }
 
 .color-purple {
-  color: #2c0d53;
+  color: #51C8C8;
 }
 
 .color-teal {
@@ -558,10 +559,10 @@ body {
 
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b75a7+0,009b77+100 */
-background: rgba(44, 13, 84, 0.7); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(107, 117, 167, 0.7) 0%, rgba(44, 13, 84, 0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(107, 117, 167, 0.7) 0%,rgba(44, 13, 84, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(107, 117, 167, 0.7) 0%,rgba(44, 13, 84, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: rgba(81, 200, 200, 0.7); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(117, 200, 200, 0.7) 0%, rgba(40, 144, 190, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117, 167, 0.7)', endColorstr='rgba(44, 13, 84, 0.7)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
@@ -762,7 +763,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   display: block;
 }
 
-.unicorn-dac-row {
+.kitten-dac-row {
   padding-left: 10vw;
   padding-right: 10vw;
 
@@ -771,7 +772,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
   }
 }
 
-.unicorn-dac-column {
+.kitten-dac-column {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
@@ -793,7 +794,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(107, 117
 */
 }
 
-.unicorn-logo {
+.kitten-logo {
   max-width: 30vw;
   height: auto;
 

@@ -37,7 +37,7 @@
     d3.json("https://gist.githubusercontent.com/creativepsyco/4187660/raw/6b678e72402d45811e10ebb4e238542ef4f4de51/readme-world-110m.json", function(error, world) {
 
         var countries = topojson.object(world, world.objects.countries).geometries,
-            selectCountries = ["Austria", "Belgium", "Brazil", "Czech Rep.", "Ireland", "Netherlands", "Spain", "Switzerland", "United States"],
+            selectCountries = ["Australia"],
             i = -1;
 
         countries.sort(function(a, b){
@@ -69,7 +69,7 @@
 
             country.transition()
                 .style("fill", function(d, k) {
-                    return selectCountries.indexOf(country[0][k].__data__.id) === i ? "#76318f" : "#b8b8b8";
+                    return selectCountries.indexOf(country[0][k].__data__.id) === i ? "#7dc858" : "#b8b8b8";
                 });
 
             d3.transition()
