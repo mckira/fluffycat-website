@@ -7,7 +7,7 @@ description: Using blockchain technology to help our fluffy friends
 owner: FluffyCat # or company name
 first_published: 2018 # if migrating another site, the year of your first publish
 email: meow@fluffycat.tech
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/fluffycat-website" # the subpath of your site, e.g. /blog
 url: "http://fluffycat.tech" # the base hostname & protocol for your site
 theme: minima
 medium: https://medium.com/@t04glovern/
