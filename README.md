@@ -49,9 +49,9 @@ bundle exec jekyll serve
 | ------------- |:-------------:| --------------------------:|
 | A Record      | @             | 192.30.252.153             |
 | A Record      | @             | 192.30.252.154             |
-| CNAME Record  | slack         | fluffycatware.slack.com.   |
 | CNAME Record  | www           | fluffycatware.github.io.   |
 | URL Redirect  | join          | http://fluffycat.tech/join |
+| URL Redirect  | slack         | <custom join url>          |
 
 ## Technologies
 
